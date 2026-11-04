@@ -5,7 +5,7 @@ const morgan = require('morgan');
 
 const env = require('./config/env');
 const { connectDB } = require('./config/db');
-const { notFound, errorHandler } = require('../middleware/errorHandler');
+const { notFound, errorHandler } = require('./middleware/errorHandler');
 
 const healthRouter = require('./routes/health');
 
