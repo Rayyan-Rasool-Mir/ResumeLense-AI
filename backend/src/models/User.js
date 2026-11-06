@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema(
             match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email"],
             index: true,
         },
-        passwordHash: {type:String, required:true, slect:flase},
+        passwordHash: {type:String, required:true, slect:false},
         name: {type: String, required:true, trim: true, maxLength:80},
     },
     {timestamps: true}

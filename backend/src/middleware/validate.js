@@ -11,4 +11,4 @@ const validate = (schema, source = "body") => (req, res, next) => {
     next();
 }
 
-module.exports = {vaidate};
+module.exports = {validate};
